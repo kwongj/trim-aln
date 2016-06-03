@@ -20,9 +20,9 @@ parser = argparse.ArgumentParser(
 	description='Script to trim alignments',
 	usage='\n  %(prog)s --start [POS] --end [POS] --out [OUTFILE] ALIGNMENT')
 parser.add_argument('alignment', metavar='ALIGNMENT', nargs=1, help='Alignment in FASTA format (required)')
-parser.add_argument('--start', metavar='POS', nargs=1, help='Start coordinate to trim alignment')
-parser.add_argument('--end', metavar='POS', nargs=1, help='End coordinate to trim alignment')
-parser.add_argument('--out', metavar='OUTFILE', nargs=1, required=True, help='Output file for trimmed alignment')
+parser.add_argument('--start', metavar='POS', nargs=1, help='Start coordinate to trim alignment (default = start)')
+parser.add_argument('--end', metavar='POS', nargs=1, help='End coordinate to trim alignment (default = end)')
+parser.add_argument('--out', metavar='OUTFILE', nargs=1, required=True, help='Output file for trimmed alignment (required)')
 parser.add_argument('--version', action='version', version=
 	'=====================================\n'
 	'%(prog)s v0.1\n'

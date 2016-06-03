@@ -22,9 +22,9 @@ positional arguments:
 
 optional arguments:
   -h, --help     show this help message and exit
-  --start POS    Start coordinate to trim alignment
-  --end POS      End coordinate to trim alignment
-  --out OUTFILE  Output file for trimmed alignment
+  --start POS    Start coordinate to trim alignment (default = start)
+  --end POS      End coordinate to trim alignment (default = end)
+  --out OUTFILE  Output file for trimmed alignment (required)
   --version      show program's version number and exit
 ```
 
