@@ -6,7 +6,7 @@ Jason Kwong (@kwongjc)
 
 ##Dependencies
 * Python 2.7.x
-* [Readfinder](https://github.com/kwongj/readfinder)
+* BioPython
 
 ##Usage
 
