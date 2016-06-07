@@ -68,6 +68,8 @@ with open(aln, 'rb') as f:
 newALN = []
 fa = open(aln, 'rU')
 for record in SeqIO.parse(fa, 'fasta'):
+	if (len(record) < start) or (len(record) < end):
+		err('ERROR: Sequences in alignment are only {} bp long. Check specified coordinates.'.format(len(record)))
 	msg('Reading "{}" ... '.format(record.id))
 	newseq = record.seq[start:end]
 	newALN.append(SeqRecord(newseq, id=record.id, name=record.name, description=record.description))
